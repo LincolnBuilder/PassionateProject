@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 17
+  controlID: 172
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 3433
+  controlID: 173
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 3434
+  controlID: 174
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -335,14 +335,14 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: 1107252924295281034, guid: 2890c9060ce4f6b45b4082d87f47b27e, type: 2}
     m_ValueSerializationHelper:
-    - e00: 0.7650245
+    - e00: 0.5314752
       e01: 0
       e02: 0
-      e03: 112.09154
+      e03: 262.62952
       e10: 0
-      e11: 0.7650245
+      e11: 0.5314752
       e12: 0
-      e13: -250.80914
+      e13: -61.67064
       e20: 0
       e21: 0
       e22: 1
@@ -408,22 +408,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/WizardPolyArt/Textures
+    - Assets/WizardPolyArt/Animations
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/WizardPolyArt/Textures
+  - Assets/WizardPolyArt/Animations
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\linco\Desktop\Unity projects\PassionateProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 2.2000122}
-    m_SelectedIDs: e0590000
-    m_LastClickedID: 23008
-    m_ExpandedIDs: 00000000c4590000cc59000000ca9a3b
+    m_SelectedIDs: 225d0000
+    m_LastClickedID: 23842
+    m_ExpandedIDs: 00000000165d00001e5d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -451,7 +451,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c4590000
+    m_ExpandedIDs: 00000000165d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -579,25 +579,25 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 98c2ffff
+      m_SelectedIDs: 3077feff
       m_LastClickedID: 0
-      m_ExpandedIDs: 0ef1ffff0ef2ffff8cf2ffff8cf3ffff7af6ffff3afbffff
+      m_ExpandedIDs: 0afaffff3afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: root
+        m_OriginalName: root
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -1534
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 4}
+        m_ClientGUIView: {fileID: 5}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -638,8 +638,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -100, y: -25.600006}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: -100, y: -25.600006}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -660,7 +660,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 24.8}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -830,9 +830,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 5.8542747, y: -190.07799, z: -790.54126}
+    m_Target: {x: -11.057533, y: -151.2779, z: -811.80756}
     speed: 2
-    m_Value: {x: 5.8542747, y: -190.07799, z: -790.54126}
+    m_Value: {x: -11.057533, y: -151.2779, z: -811.80756}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -879,13 +879,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.00017811268, y: 0.99295443, z: -0.118531264, w: 0.0014913398}
+    m_Target: {x: -0.0008382205, y: 0.9956154, z: -0.093171455, w: -0.008958858}
     speed: 2
-    m_Value: {x: 0.00017811175, y: 0.99294925, z: -0.118530646, w: 0.001491332}
+    m_Value: {x: -0.0008382155, y: 0.99560946, z: -0.093170896, w: -0.008958805}
   m_Size:
-    m_Target: 410.1152
+    m_Target: 417.34262
     speed: 2
-    m_Value: 410.1152
+    m_Value: 417.34262
   m_Ortho:
     m_Target: 0
     speed: 2
