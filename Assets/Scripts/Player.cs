@@ -4,20 +4,36 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
+    Animator animator;
+    //use animator.SetBool("", true)
     // Start is called before the first frame update
     void Start()
     {
-
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-    public void SetAnimator()
-    {
-        
+        if (Input.GetKey("w"))
+        {
+            animator.SetBool("isWalking", true);
+        }
+        else if (Input.GetKey("a"))
+        {
+            animator.SetBool("isWalking", true);
+        }
+        else if (Input.GetKey("s"))
+        {
+            animator.SetBool("isWalking", true);
+        }
+        else if (Input.GetKey("d"))
+        {
+            animator.SetBool("isWalking", true);
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
+        }
     }
 }
