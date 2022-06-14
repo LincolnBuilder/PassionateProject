@@ -15,9 +15,10 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         animation();
+         regularAnimation();
+        sneakyAnimation();
     }
-    void animation()
+    void regularAnimation()
     {
         //movement animation
         if (Input.GetKey("w"))
@@ -40,7 +41,9 @@ public class Player : MonoBehaviour
         {
             animator.SetBool("isWalking", false);
         }
-        //sneaky
+    }
+    void sneakyAnimation()
+    {
         if (Input.GetKey("left shift"))
         {
             //forward
