@@ -43,28 +43,41 @@ public class Player : MonoBehaviour
         //sneaky
         if (Input.GetKey("left shift"))
         {
+            //forward
             animator.SetBool("isSneaky", true);
             if (Input.GetKey("w"))
             {
                 animator.SetBool("sneakyWalkForward", true);
             }
-            else if (Input.GetKey("a"))
+            else
+            {
+                animator.SetBool("sneakyWalkForward", false);
+            }
+            //left
+            if (Input.GetKey("a"))
             {
                 animator.SetBool("sneakyWalkLeft", true);
             }
-            else if (Input.GetKey("s"))
+            else
+            {
+                animator.SetBool("sneakyWalkLeft", false);
+            }
+            //back
+            if (Input.GetKey("s"))
             {
                 animator.SetBool("sneakyWalkBack", true);
             }
-            else if (Input.GetKey("d"))
+            else
+            {
+                animator.SetBool("sneakyWalkBack", false);
+            }
+            //right
+            if (Input.GetKey("d"))
             {
                 animator.SetBool("sneakyWalkRight", true);
             }
             else
             {
-                animator.SetBool("sneakyWalkForward", false);
-                animator.SetBool("sneakyWalkLeft", false);
-                animator.SetBool("sneakyWalkBack", false);
                 animator.SetBool("sneakyWalkRight", false);
             }
         }
