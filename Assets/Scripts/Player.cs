@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     Animator animator;
+    public float moveSpeed = 5;
     //use animator.SetBool("", true)
     // Start is called before the first frame update
     void Start()
