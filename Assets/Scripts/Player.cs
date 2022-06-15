@@ -16,8 +16,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         regularAnimation();
+        regularAnimation();
         sneakyAnimation();
+        jumping();
     }
     void regularAnimation()
     {
@@ -88,6 +89,14 @@ public class Player : MonoBehaviour
         else
         {
             animator.SetBool("isSneaky", false);
+        }
+    }
+    void jumping()
+    {
+        animator.ResetTrigger("jumped");
+        if (Input.GetKeyDown("space"))
+        {
+            animator.SetTrigger("jumped");
         }
     }
 }
