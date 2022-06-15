@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class playerAnimation : MonoBehaviour
 {
     Animator animator;
     public float moveSpeed = 5;
@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
         regularAnimation();
         sneakyAnimation();
         jumping();
+        interact();
     }
     void regularAnimation()
     {
@@ -98,5 +99,19 @@ public class Player : MonoBehaviour
         {
             animator.SetTrigger("jumped");
         }
+    }
+    void interact()
+    {
+        animator.ResetTrigger("interacting");
+        if (Input.GetKeyDown("e"))
+        {
+            animator.SetTrigger("interacting");
+        }
+        /*once objects are added use
+         * if (touching item)
+         *{
+         *animator.SetTrigger("pickingUp")
+         *}
+         */
     }
 }
