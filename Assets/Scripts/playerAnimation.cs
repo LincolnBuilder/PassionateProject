@@ -20,6 +20,7 @@ public class playerAnimation : MonoBehaviour
         sneakyAnimation();
         jumping();
         interact();
+        defending();
     }
     void regularAnimation()
     {
@@ -110,5 +111,13 @@ public class playerAnimation : MonoBehaviour
          *animator.SetTrigger("pickingUp")
          *}
          */
+    }
+    void defending()
+    {
+        if (Input.GetMouseButton(1))
+        {
+            animator.SetBool("isDefending", true);
+        }
+        animator.SetBool("isDefending", false);
     }
 }
