@@ -5,7 +5,7 @@ using UnityEngine;
 public class playerAnimation : MonoBehaviour
 {
     Animator animator;
-    public float moveSpeed = 5;
+    public float moveSpeed = 0;
     //use animator.SetBool("", true)
     // Start is called before the first frame update
     void Start()
@@ -23,26 +23,23 @@ public class playerAnimation : MonoBehaviour
     }
     void regularAnimation()
     {
-        //movement animation
-        if (Input.GetKey("w"))
+        if (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d"))
         {
-            animator.SetBool("isWalking", true);
-        }
-        else if (Input.GetKey("a"))
-        {
-            animator.SetBool("isWalking", true);
-        }
-        else if (Input.GetKey("s"))
-        {
-            animator.SetBool("isWalking", true);
-        }
-        else if (Input.GetKey("d"))
-        {
-            animator.SetBool("isWalking", true);
+            moveSpeed += 1;
+            if (moveSpeed > 100)
+            {
+                animator.SetBool("isRunning", true);
+            }
+            else
+            {
+                animator.SetBool("isWalking", true);
+            }
         }
         else
         {
+            animator.SetBool("isRunning", false);
             animator.SetBool("isWalking", false);
+            moveSpeed = 0;
         }
     }
     void sneakyAnimation()
